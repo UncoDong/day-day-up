@@ -5,3 +5,7 @@
 
 
 - [英语笔记](/英语笔记/README.md)
+- [每日学习总结](/每日学习总结/README.md)
+- [简谱记录](/简谱记录/README.md)
+- [pytorch相关学习](/pytorch相关学习/README.md)
+
