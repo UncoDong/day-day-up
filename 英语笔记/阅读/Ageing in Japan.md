@@ -130,3 +130,10 @@ the ever-worsening unemployment 每况愈下的失业现象
 
 
 
+budget - 预算，可以做动词，把。。。编入预算
+
+The company has **budget**$10 million for advertising
+
+excluding including的反义词，为不包括，除外
+
+The families questioned **excluding** those on income support, have a net income of 500,20 a week.除了那些依靠收入补助金的家庭
