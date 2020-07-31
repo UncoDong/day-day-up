@@ -39,3 +39,5 @@
  　█▊　　█▋<br>
  　 █▏　　█▙<br>
  　 █<br>
+
+**7.30注**： increase exposure to English  
