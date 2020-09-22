@@ -1,0 +1,65 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>化妆品生产许可信息管理系统服务平台</title>
+	<meta http-equiv="keywords" content="化妆品生产许可信息管理系统服务平台,化妆品生产许可证查询,化妆品生产许可企业查询,化妆品生产许可企业"/>
+    <meta http-equiv="description" content="化妆品生产许可信息管理系统服务平台是由国家药品监督管理局主办，此平台可以查到化妆品生产企业信息"/>
+	<script language="javascript" type="text/javascript">
+	//alert("自2020年8月14日起，原化妆品生产许可信息管理系统地址变更为：http://scxk.nmpa.gov.cn:81/xk/，请提前安排好工作。");
+       var G = {"baseUrl":"http://scxk.nmpa.gov.cn:81/xk/"};
+    </script>
+	<script src="http://scxk.nmpa.gov.cn:81/xk/itownet/_static/common/jquery/jquery-1.7.1.min.js"  type="text/javascript" charset="utf-8"></script>
+	<script	src="http://scxk.nmpa.gov.cn:81/xk/itownet/_static/common/jquery/plugins/jquery.cookie.js"	type="text/javascript" charset="utf-8"></script>
+	<script src="http://scxk.nmpa.gov.cn:81/xk/itownet/portal/jquery.myPagination.js"   type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="http://scxk.nmpa.gov.cn:81/xk/itownet/portal/style_portal.css" type="text/css" />
+	<link rel="stylesheet" href="http://scxk.nmpa.gov.cn:81/xk/itownet/_static/css/page.css"	type="text/css" />
+	
+    <script	src="http://scxk.nmpa.gov.cn:81/xk/itownet/portal/portal.js?v=2017-01-15"	type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body >
+	<div class="hzbbanner"><div class="hzbbannertxt"><a href="http://scxk.nmpa.gov.cn:81/xk/login.jsp" target="_blank" title="进入化妆品生产许可信息管理系统">【业务办理】</a></div></div>
+	<div class="hzbscbox">
+		<div class="hzbscin">
+			<div style="position:relative;">
+				<div class="hzbtabs">
+					    <span id="xkzh" class="hzbtabon" dataid="1">许可证编号</span> 
+						<span id="qymc" dataid="2">企业名称</span> 
+						<span id="xydm" dataid="3">社会信用代码</span>
+						<input type="hidden" id="conditionType" value="1"/>
+				</div>
+			</div>
+			<input type="text" id="searchtext" class="hzbsr" name="kw" value=""	placeholder="请输入许可证号" /> 
+				<input type="button" class="hzbbtn"	id="searchInfo" value="查询" />
+		</div>
+	</div>
+
+	<div class="dzpzmain">
+		<div id="FileItems">
+		    <ul class="hzblist"  style="margin-top: 0px;margin-bottom: 0px;border-top: 0px;border-bottom: 0px;">
+				<li class="columm"><i>发证日期</i>
+					<dl>企业名称
+					</dl>
+					<ol>许可证编号
+					</ol>
+					<p>发证机关</p> <em>有效期至</em>
+				</li>
+			</ul>
+			<ul class="hzblist" id="gzlist" style="margin-top: 0px;border-top: 0px;">
+				 
+			</ul>
+		</div>
+        <div id="itownetPage"></div>
+		
+	</div>
+
+
+	<div class="hzbbtm">
+		本站由<a href="http://www.sfda.gov.cn/WS01/CL0479/" target="_blank">国家药品监督管理局</a>主办
+		版权所有 未经许可禁止转载或建立镜像 Copyright &copy; NMPA All Rights Reserved  系统技术：信息中心 电话：010-88331913
+	</div>
+</body>
+</html>
