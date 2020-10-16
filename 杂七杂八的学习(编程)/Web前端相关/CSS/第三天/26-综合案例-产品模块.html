@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .box {
+            width: 300px;
+            height: 415px;
+            background-color: #ffffff;
+            /* 让块级的盒子水平居中对齐 */
+            /* 100px指的是上下 */
+            margin: 100px auto;
+            overflow: hidden
+        }
+        
+        .box img {
+            width: 100%;
+        }
+        
+        .review {
+            width: 200px;
+            height: 70px;
+            font-size: 14px;
+            /* 因为这个段落没有width属性 所以padding不会撑开盒子的宽度 */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+        
+        .appraise {
+            font-size: 12px;
+            color: #b0b0b0;
+            margin-top: 20px;
+            margin: 0px 28px;
+        }
+        
+        .info h4 {
+            display: inline-block;
+            padding-top: 15px;
+            font-size: 14px;
+            font-weight: normal;
+            padding-left: 28px;
+        }
+        
+        .info span {
+            color: salmon;
+        }
+        
+        .info em {
+            font-style: normal;
+            color: #ebe40f;
+            margin: 0 6px 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./img.jpg" alt="">
+        <p class="review">快递牛，整体不错，蓝牙可以说秒链，红米牛逼！</p>
+        <div class="appraise">来自于UncleDong的评论</div>
+        <div class="info">
+            <h4>Redmi AirDots真无线蓝...</h4><em>|</em>
+            <span>99.99元</span>
+        </div>
+    </div>
+</body>
+
+</html>
