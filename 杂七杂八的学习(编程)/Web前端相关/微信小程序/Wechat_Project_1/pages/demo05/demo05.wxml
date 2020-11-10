@@ -1,0 +1,6 @@
+<!--pages/demo05/demo05.wxml-->
+<text selectable="{{true}}">pages/demo05/demo05.wxml</text>
+<text decode="{{true}}">
+    text&nbsp;text2
+</text>
+  

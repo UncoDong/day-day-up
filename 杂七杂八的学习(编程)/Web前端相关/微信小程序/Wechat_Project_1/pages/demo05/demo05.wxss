@@ -1,0 +1,9 @@
+text {
+  color: yellow;
+}
+view .vie1 text {
+  color: red;
+}
+view {
+  color: yellow;
+}

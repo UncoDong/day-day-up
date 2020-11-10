@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1200px;
+            height: 460px;
+            background-color: palevioletred;
+            margin: 0 auto;
+        }
+        
+        .left {
+            float: left;
+            width: 230px;
+            height: 460px;
+            background-color: pink;
+        }
+        
+        .right {
+            float: left;
+            width: 970px;
+            height: 460px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 这里因为左侧盒子和右侧盒子都是标准流，所以他们是上下排列的 -->
+        <div class="left">左侧</div>
+        <div class="right">右侧</div>
+    </div>
+</body>
+
+</html>

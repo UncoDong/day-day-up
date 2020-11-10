@@ -1,0 +1,19 @@
+<!-- 导航组件navigator
+    0. 块级元素，默认换行
+    1. url 要跳转的页面(wxml)路径，可以相对可以绝对
+    2. 注意反斜杠 注意第一个也要有斜杠 注意不用加wxml -->
+<navigator class="" target="" url="/pages/demo10/demo10" hover-class="navigator-hover" open-type="navigate">
+    navigate跳转轮播图页面
+</navigator>
+<navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="navigate">
+    navigate直接跳转到tabbar页面（切换不过去
+</navigator>
+<navigator class="" target="" url="/pages/demo10/demo10" hover-class="navigator-hover" open-type="redirect">
+    redirect关闭并跳转到轮播图页面
+</navigator>
+<navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="switchTab">
+    switchTab直接跳转到tabbar页面
+</navigator>
+<navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="reLaunch">
+    reLaunch关闭所有页面，可以随便跳转
+</navigator>

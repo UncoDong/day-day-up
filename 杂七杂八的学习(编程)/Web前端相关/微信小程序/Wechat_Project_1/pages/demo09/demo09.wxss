@@ -1,0 +1,8 @@
+/* pages/demo09/demo09.wxss */
+
+image {
+    box-sizing: border-box;
+    /*红色边框*/
+    border: 1px solid red;
+    width: 300px;
+}

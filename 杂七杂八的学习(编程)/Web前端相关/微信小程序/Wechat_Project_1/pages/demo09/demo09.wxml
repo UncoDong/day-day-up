@@ -1,0 +1,5 @@
+<!--pages/demo09/demo09.wxml-->
+<text>pages/demo09/demo09.wxml</text>
+<image class="" src="https://img-blog.csdnimg.cn/20201005200046539.png" mode="aspectFit" lazy-load="false" binderror="" bindload="">
+    
+</image>

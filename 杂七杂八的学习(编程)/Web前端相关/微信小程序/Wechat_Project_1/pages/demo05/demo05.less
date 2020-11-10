@@ -1,0 +1,19 @@
+// 定义less变量
+@color:yellow;
+text{
+    // 使用变量
+    color:@color;
+}
+
+view{
+    .vie1{
+        text{
+            color:red;
+        }
+    }
+}
+
+@import "./reset.less";
+view{
+    color:@backcolor;
+}

@@ -1,0 +1,12 @@
+<text class="" selectable="false" space="false" decode="false">????</text>
+<!-- 1. 父组件向子属性 通过标签属性的方式 传递数据 -->
+<!-- 2. 子组件(tabs.js)进行接收 -->
+<Tabs tabs="{{tabs}}" binditemChange="handleitemChange">
+    <block wx:if="{{tabs[0].isActive}}">1</block>
+    <block wx:elif="{{tabs[1].isActive}}">2</block>
+    <block wx:elif="{{tabs[2].isActive}}">3</block>
+    <block wx:elif="{{tabs[3].isActive}}">4</block>
+    <block wx:elif="{{tabs[4].isActive}}">5</block>
+</Tabs>
+<!-- 子向父传递数据，通过事件的方式传递 
+1 在子组件的标签上加入一个自定义事件 -->

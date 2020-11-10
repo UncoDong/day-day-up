@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 得有了这个元素后才能获取到他，因此script要写在这个元素的下面 -->
+    <div id="time">2020-10-19</div>
+    <script>
+        // 1. script需要定义在标签出现的下面
+        // 2. get获得element元素by通过ID 这是驼峰命名法
+        // 3. id是大小写敏感的字符串
+        // 4. 返回的是一个元素对象
+        var timer = document.getElementById('time');
+        console.log(typeof timer);
+        // 5. 可以打印元素对象，更好地查看里面的元素和方法
+        console.dir(timer)
+    </script>
+</body>
+
+</html>

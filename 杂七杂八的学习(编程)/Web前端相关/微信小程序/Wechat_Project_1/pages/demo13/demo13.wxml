@@ -1,0 +1,42 @@
+<!-- button 标签
+    1. 外观的属性
+        1. size 控制按钮的大小 
+            defauly 默认大小
+            mini 小尺寸 
+        2. type 控制按钮的颜色 
+            1 default 灰色
+            2 primary 绿色 
+            3 warn 红色 
+        3. plain 背景色透明
+        4. loading 名称前是否带一个loading图标 -->
+<button>默认按钮</button>
+<button size="mini">mini按钮</button>
+<button size="mini" type="warn">绿色按钮</button>
+<button size="mini" type="primary">红色按钮</button>
+<button plain size="mini" type="primary">镂空按钮</button>
+<button loading size="default" type="warn">loading按钮</button>
+<!-- 开发能力
+one-type 
+1 contact 直接打开客服对话
+2 share 转发当前小程序到微信朋友 不能到朋友圈
+3 getPhoneNumber 获取当前用户的手机号码信息 结合一个事件使用 不是企业的小程序账号没有权限获取用户的手机账号
+    1. 绑定事件 bindgetphonenumber
+    2. 在事件的回调函数中，通过参数来火气信息
+    3. 获取到的信息已经加密过了
+4 getUserInfo 获取当前用户的个人信息，也是需要回调函数
+    1. 类似获取用户手机号
+    2. 可以直接获取不加密的字段
+5 launchApp 在小程序当中直接打开app 
+    1. 需要在app中 通过app的某个链接打开小程序
+    2. 小程序中再通过这个给功能重新打开app
+    3. 找到京东的app和京东的小程序来重现
+6 openSetting 打开小程序内置的授权
+    1 授权页面中只会出现用户曾经点击过的功能
+7 feedback 打开小程序内置的意见反馈 -->
+<button open-type="contact">contatt 联系客服 真机演示</button>
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp">launchApp 暂时无法模拟</button>
+<button open-type="openSetting">openSetting 真机可用</button>
+<button open-type="feedback">feedback 真机演示</button>

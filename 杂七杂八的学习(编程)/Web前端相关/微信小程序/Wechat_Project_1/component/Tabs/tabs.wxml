@@ -1,0 +1,18 @@
+<view class="" hover-class="none" hover-stop-propagation="false">{{aaa}}</view>
+<view class="tabs">
+    <view class="tabs_title">
+        <!-- <view class="title_item active">首页</view>
+        <view class="title_item">原创</view>
+        <view class="title_item">分类</view>
+        <view class="title_item">关于</view> -->
+        <view wx:for="{{tabs}}" wx:key="id" class="title_item {{item.isActive?'active':''}}" hover-class="none" bindtap="handleItemTap" data-index="{{index}}">
+            {{item.name}}
+        </view>
+    </view>
+    <view class="tabs_content">
+        <slot>
+            <!-- slot标签只是一个占位符，插槽
+    等到父组件调用子组件的时候，再传递标签过来，最终这些被传递的标签会替换slot插槽的位置 -->
+        </slot>
+    </view>
+</view>

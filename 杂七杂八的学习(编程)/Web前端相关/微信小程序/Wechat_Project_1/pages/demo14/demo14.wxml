@@ -1,0 +1,4 @@
+<!-- 小程序中的字体图标
+    1. type图标的类型 -->
+<icon type="success" size="60" color="red"></icon>
+<block  wx:for="{{arr}}" wx:for-index="index"><icon type="cancel" size="{{index}}" color="green"></icon></block>

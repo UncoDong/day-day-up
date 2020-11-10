@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>早上好1</li>
+        <li>早上好2</li>
+        <li>早上好3</li>
+        <li>早上好4</li>
+        <li>早上好5</li>
+    </ul>
+    <ol>
+        <li>生僻字1</li>
+        <li>生僻字2</li>
+        <li>生僻字3</li>
+        <li>生僻字4</li>
+        <li>生僻字5</li>
+    </ol>
+    <script>
+        // 1. 返回的是获取过来的元素对象的集合，以伪数组的i形式存储
+        var lis = document.getElementsByTagName('li');
+        console.log(lis);
+        console.log(lis[0]);
+        // 2. 使用遍历的方式打印里面的对象
+        for (var i = 0; i < lis.length; i++) {
+            console.log(lis[i]);
+        }
+    </script>
+</body>
+
+</html>

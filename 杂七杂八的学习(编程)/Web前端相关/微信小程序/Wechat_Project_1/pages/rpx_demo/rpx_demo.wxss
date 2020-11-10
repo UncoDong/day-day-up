@@ -1,0 +1,13 @@
+/* pages/rpx_demo/rpx_demo.wxss */
+
+
+/* 
+小程序中不需要主动引入样式文件
+ */
+
+view {
+    width: 200rpx;
+    height: 200rpx;
+    font-style: 40rpx;
+    background-color: aqua;
+}

@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+    /* height: 3000px; */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 所有的li都清除掉样式 */
+
+li {
+    list-style: none;
+}
+
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    /* 注意此地方会层叠 w里面的margin */
+    margin: 20px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    /* background-color: purple; */
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 3px solid #00a4ff;
+    color: #00a4ff;
+}
+
+
+/* search搜索模块  */
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    background-color: skyblue;
+    margin-left: 50px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    color: #bfbfbf;
+    padding-left: 15px;
+}
+
+
+/* 行内块元素中会有一个缝隙 */
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* background-color: blue; */
+    /* button默认有个边框，需要我们手动去掉 */
+    border: 0;
+    background: url('./images/btn.png');
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* 图片和文字的垂直居中以后讲 */
+
+
+/* 这里是banner区域 */
+
+.banner {
+    /* width: 100%; */
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    background-color: pink;
+    background: url('./images/banner2_20190819_210028.png') no-repeat top center;
+}
+
+
+/* 侧边导航模块 */
+
+.subnav {
+    float: left;
+    height: 421px;
+    width: 190px;
+    background: rgba(0, 0, 0, 0.3);
+    /* margin-top: 120px; */
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.subnav ul li a span {
+    float: right
+}
+
+
+/* 课程模块 */
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: white;
+    /* 这里没有发生外边距塌陷，就是因为浮动的盒子，不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+
+.course h2 {
+    background-color: #9bceea;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: snow;
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    /* background-color: teal; */
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+
+
+/* 精品推荐模块 */
+
+.goods {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    /* 因为存在继承，所以只要在父亲这里写行高就行 */
+    line-height: 60px;
+}
+
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+}
+
+.goods .mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+
+/* box核心内容区域 */
+
+.box {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 45px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.box-bd ul {
+    width: 1225px;
+}
+
+.box-bd ul li {
+    float: left;
+    width: 230px;
+    height: 270px;
+    background-color: snow;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.box-bd ul li img {
+    width: 100%;
+}
+
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box-bd .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box-bd .info span {
+    color: #ff7c2d;
+}
+
+
+/* footer模块 */
+
+.footer {
+    height: 410px;
+    background-color: snow;
+}
+
+
+/* 这种写法会出现外边距合并的问题 */
+
+
+/* .footer .w {
+    margin-top: 35px;
+} */
+
+.footer .w {
+    padding-top: 35px;
+}
+
+.copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.footer .app {
+    margin-top: 20px;
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: solid 1px blue;
+    color: black;
+    text-align: center;
+    line-height: 33px;
+    color: blue;
+    font-size: 16px;
+}
+
+.links {
+    float: right;
+}
+
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+
+.links dl dt {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.links dl dd a {
+    font-size: 12px;
+    color: #333333;
+}

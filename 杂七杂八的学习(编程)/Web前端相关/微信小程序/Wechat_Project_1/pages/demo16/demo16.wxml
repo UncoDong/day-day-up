@@ -1,0 +1,6 @@
+<view>
+    <checkbox-group bindchange="handleItemChange">
+        <checkbox wx:for="{{list}}" wx:key="id" value="{{item.value}}">{{item.name}}</checkbox>
+    </checkbox-group>
+    <view class="" hover-class="none" hover-stop-propagation="false">选中的水果为{{checkedlist}}</view>
+</view>

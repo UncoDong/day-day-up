@@ -1,0 +1,35 @@
+<!--pages/mine/mine.wxml-->
+<!-- 
+    1 text标签相当于span标签 是行内元素，不会换行
+    2 view 相当于div标签 块级元素 会换行
+ -->
+<text>pages/mine/mine.wxml</text>
+<view>{{msg}}</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    {{num}}
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+    {{person.age}}
+</view>
+
+<!-- 在标签的属性中使用 一定要拿引号抱起来 -->
+<view dat a-num="{{num}}">
+    {{10%2 === 0 ? '偶数':'奇数 '}}
+</view>
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <checkbox checked=" {{isChecked}}">
+    
+    </checkbox>
+</view>
+<block wx:for="{{my_list}}" wx:for-item="item" wx:for-index="index" class="my_list">
+    索引: {{index}},
+    --
+    值：{{item.name}}
+</block>
+
+<view>
+<view>条件渲染</view>
+<view wx:if="{{true}}">显示</view>
+<view wx:if="{{false}}">隐藏</view>
+</view>

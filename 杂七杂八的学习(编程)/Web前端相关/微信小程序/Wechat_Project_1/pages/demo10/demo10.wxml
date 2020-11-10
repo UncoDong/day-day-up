@@ -1,0 +1,22 @@
+<!-- pages/demo10/demo10.wxml -->
+<!-- 1. 轮播图外层容器 swiper
+    2. 每一个轮播项 swiper-item
+    3. swiper标签存在默认样式
+        1. width 100%
+        2. 默认height 150px 而image的默认宽高320*240
+        3. swiper 高度无法实现由内容撑开
+    4. 先找出来原图的宽高，等比例给swiper定宽高
+        原图：640 * 200， 1125 * 352
+        swiper 宽度 / swiper 高度 = 原图宽度 / 原图高度
+        height: 100% * 352 / 1125 -->
+<swiper autoplay interval="1000" circular indicator-dots="{{true}}" indicator-active-color="red">
+    <swiper-item class="" item-id="">
+        <image src="//gw.alicdn.com/imgextra/i1/73/O1CN01hcQjoC1CPTXZE0CsJ_!!73-0-lubanu.jpg" mode="widthFix" />
+    </swiper-item>
+    <swiper-item class="" item-id="">
+        <image src="https://gw.alicdn.com/imgextra/i4/9/O1CN0127PHKy1BwAC1IrR65_!!9-0-lubanu.jpg" mode="widthFix" />
+    </swiper-item>
+    <swiper-item class="" item-id="">
+        <image src="//gw.alicdn.com/imgextra/i1/167/O1CN01OAZUzE1D6WloIx9vs_!!167-0-lubanu.jpg" mode="widthFix" />
+    </swiper-item>
+</swiper>

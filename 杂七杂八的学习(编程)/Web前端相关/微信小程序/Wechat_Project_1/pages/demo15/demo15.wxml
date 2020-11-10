@@ -1,0 +1,10 @@
+<!-- radio 但却选矿
+1. radio必须要和父亲元素 radio-group一起使用
+2. value 选中的是单选框的值
+3. 需要绑定嫦娥事件
+4. 在页面中显示选中的值 -->
+<radio-group bindchange="handleChange">
+    <radio color="pink" value="male">男</radio>
+    <radio color="blue " value="female">女</radio>
+</radio-group>
+<view>您选中的值是：{{gender}}</view>

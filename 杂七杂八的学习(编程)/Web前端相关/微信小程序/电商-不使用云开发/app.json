@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/category",
+        "pages/goods_list/goods_list",
+        "pages/goods_detail/goods_detail",
+        "pages/cart/cart",
+        "pages/collect/collect",
+        "pages/order/order",
+        "pages/search/search",
+        "pages/user/user",
+        "pages/feedback/feedback",
+        "pages/login/login",
+        "pages/auth/auth",
+        "pages/pay/pay"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "黑🐎优购",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
+

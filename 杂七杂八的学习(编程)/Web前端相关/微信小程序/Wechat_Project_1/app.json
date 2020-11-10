@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/demo14/demo14",
+        "pages/demo15/demo15",
+        "pages/demo16/demo16",
+        "pages/demo17/demo17",
+       
+        
+        "pages/demo13/demo13",
+        "pages/demo12/demo12",
+        "pages/demo11/demo11",
+        "pages/demo10/demo10",
+        "pages/rpx_demo/rpx_demo",
+        "pages/demo09/demo09",
+        "pages/demo05/demo05",
+        "pages/search/search",
+        "pages/index/index",
+        "pages/img/img",
+        "pages/mine/mine",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "爱你哟",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "icon/_home.png",
+            "selectedIconPath": "icon/home.png"
+        }, {
+            "pagePath": "pages/img/img",
+            "text": "图片",
+            "iconPath": "icon/_img.png",
+            "selectedIconPath": "icon/img.png"
+        }, {
+            "pagePath": "pages/mine/mine",
+            "text": "图片",
+            "iconPath": "icon/_my.png",
+            "selectedIconPath": "icon/my.png"
+        }, {
+            "pagePath": "pages/search/search",
+            "text": "搜索",
+            "iconPath": "icon/_search.png",
+            "selectedIconPath": "icon/search.png"
+        }]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

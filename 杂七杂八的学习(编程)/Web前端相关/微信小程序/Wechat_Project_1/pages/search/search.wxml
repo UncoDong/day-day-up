@@ -1,0 +1,10 @@
+<!--pages/search/search.wxml-->
+<text>pages/search/search.wxml</text>
+<input type="text" bindinput="handleInput"/>
+<view >
+    {{num}}
+</view>
+
+<!-- 以下写法为js中常用写法，会出问题 -->
+<button bindtap="handletap" data-operation="{{1}}">+</button>
+<button bindtap="handletap" data-operation="{{-1}}">-</button>
